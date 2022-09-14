@@ -1,58 +1,65 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package sbmtn;
+package mk;
 
 import java.util.Scanner;
 
 /**
  *
- * @author MK1337
+ * @author acer
  */
-public class SBMTN {
-
-    /**
-     * @param args the command line arguments
-     */
+public class sw {
     public static void main(String[] args) {
 Scanner input = new Scanner(System.in);
-String jalur,ol;
-        System.out.println("Masukkan jalur masuk : ");
-        jalur = input.next();
-        if(jalur.equalsIgnoreCase("SBMPTN")){
-            System.out.println("Masukkan Pendapatan : ");
-ol = input.next();
-if(ol.equalsIgnoreCase("A")){
-    System.out.println("DSP : 5 Juta \n SPP 500 Ribu");
-}else if(ol.equalsIgnoreCase("B")){
-    System.out.println("DSP : 15 Juta \n SPP : 1 Juta");
-}else if (ol.equalsIgnoreCase("C")){
-    System.out.println("DSP : 30 Juta \n SPP : 2 Juta");
-} if(jalur.equalsIgnoreCase("SNMPTN")){
-            System.out.println("Masukkan Pendapatan : ");
-ol = input.next();
-if(ol.equalsIgnoreCase("A")){
-    System.out.println("DSP : 7 Juta \n SPP 500 Ribu");
-}else if(ol.equalsIgnoreCase("B")){
-    System.out.println("DSP : 17 Juta \n SPP : 1 Juta");
-}else if (ol.equalsIgnoreCase("C")){
-    System.out.println("DSP : 35 Juta \n SPP : 2 Juta");
-} if(jalur.equalsIgnoreCase("Mandiri")){
-            System.out.println("Masukkan Pendapatan : ");
-ol = input.next();
-if(ol.equalsIgnoreCase("A")){
-    System.out.println("DSP : 10 Juta \n SPP 1 Juta");
-}else if(ol.equalsIgnoreCase("B")){
-    System.out.println("DSP : 25 Juta \n SPP : 2 Juta");
-}else if (ol.equalsIgnoreCase("C")){
-    System.out.println("DSP : 50 Juta \n SPP : 3 Juta");
-}
-        }
-    }
-        }
-    }
-        }
-    
-    
+ Scanner in = new Scanner(System.in);
+        String r,g;
+        System.out.println("Masukkan pilihan jalur :");
+        r= in.next();
+        if (r.equalsIgnoreCase("SBMPTN")){
+            System.out.println("Pilih golongan pendaftaran : ");
+            g = in.next();
+            if (g.equalsIgnoreCase("A")){
+                System.out.println("DSP = 5 juta \n SPP 500 Ribu");
+                System.out.println("SPP = 500 ribu");
+            }
+            else if (g.equalsIgnoreCase("B")){
+                System.out.println("DSP = 15 juta \n SPP = 1 juta ");
+            }
+            else if (g.equalsIgnoreCase("C")){
+                System.out.println("DSP = 30 juta \nSPP = 2 Juta");
+            }
 
+            
+        }else if (r.equalsIgnoreCase("SNMPTN")){
+            System.out.println("Pilih golongan pendaftaran : ");
+            g = in.next();
+            if (g.equalsIgnoreCase("A")){
+                System.out.println("DSP = 7 juta \nSPP = 500 RIbu");
+            }
+            else if (g.equalsIgnoreCase("B")){
+                System.out.println("DSP = 17 juta \nSPP = 1 Juta");
+            }
+            else if (g.equalsIgnoreCase("C")){
+                System.out.println("DSP = 35 juta \nSPP = 2 Juta");
+            }
+       }
+        else if (r.equalsIgnoreCase("Mandiri")){
+           System.out.println("Pilih golongan pendaftaran : ");
+            g = in.next();
+            if (g.equalsIgnoreCase("A")){
+                System.out.println("DSP = 10 juta \nSPP = 1 Juta");
+                }
+            else if (g.equalsIgnoreCase("B")){
+                System.out.println("DSP = 25 juta \n SPP = 2 Juta");
+                }
+            else if (g.equalsIgnoreCase("C")){
+                System.out.println("DSP = 50 juta \n SPP = 3 Juta");
+                        }
+          
+        }
+       }
+    
+}
+       
